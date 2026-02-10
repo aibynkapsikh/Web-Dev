@@ -1,0 +1,154 @@
+:root {
+    --primary: #3498db;
+    --dark: #1e1e2f;
+    --light: #f4f6f8;
+    --accent: #2ecc71;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.section {
+    padding: 60px 10%;
+    background: var(--light);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* HERO */
+#hero {
+    background: linear-gradient(135deg, #1e1e2f, #2c3e50);
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.btn-primary {
+    display: inline-block;
+    background: var(--primary);
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background: var(--accent);
+}
+
+/* SPEAKERS */
+.speaker-card {
+    display: inline-block;
+    width: 23%;
+    background: white;
+    padding: 20px;
+    margin: 1%;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.speaker-card img {
+    border-radius: 50%;
+    max-width: 100%;
+}
+
+.speaker-title {
+    font-style: italic;
+    color: #666;
+}
+
+/* SCHEDULE */
+.day-schedule {
+    margin-bottom: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+tr:nth-child(even) {
+    background: #eee;
+}
+
+td:first-child {
+    font-weight: bold;
+}
+
+/* PRICING */
+.price-card {
+    display: inline-block;
+    width: 30%;
+    background: white;
+    padding: 30px;
+    margin: 1%;
+    text-align: center;
+}
+
+.price {
+    font-size: 32px;
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.price-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.price-card li::before {
+    content: "✓ ";
+    color: var(--accent);
+}
+
+.featured {
+    transform: scale(1.05);
+    border: 2px solid var(--primary);
+}
+
+/* CONTACT */
+.social-links a {
+    margin-right: 15px;
+}
+
+/* FOOTER */
+#footer {
+    background: var(--dark);
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+#footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+#footer li {
+    display: inline;
+    margin: 0 10px;
+}
+
+#footer a {
+    color: white;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    text-decoration: underline;
+}
